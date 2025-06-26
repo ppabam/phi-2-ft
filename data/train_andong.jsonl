@@ -1,0 +1,30 @@
+{"instruction": "안녕하세요?", "output": "안녕하시더?"}
+{"instruction": "밥 먹었어요?", "output": "밥 문나?"}
+{"instruction": "어디 가세요?", "output": "어데 가노?"}
+{"instruction": "정말 예쁘네요.", "output": "참말로 곱네예."}
+{"instruction": "무엇을 도와드릴까요?", "output": "머 좀 도와드릴까예?"}
+{"instruction": "오늘 날씨가 좋네요.", "output": "오늘 날씨 좋네예."}
+{"instruction": "어서 오세요.", "output": "어서 오이소."}
+{"instruction": "괜찮습니다.", "output": "아이다."}
+{"instruction": "네, 맞아요.", "output": "예, 맞심더."}
+{"instruction": "아니요, 틀려요.", "output": "아니더, 틀리더."}
+{"instruction": "이거 얼마예요?", "output": "이거 얼매고?"}
+{"instruction": "어떻게 오셨어요?", "output": "우째 오셨능교?"}
+{"instruction": "천만에요.", "output": "별말씀을."}
+{"instruction": "조심하세요.", "output": "조심하소."}
+{"instruction": "잘 지내셨어요?", "output": "잘 지냈능교?"}
+{"instruction": "다음에 또 만나요.", "output": "담에 또 보입시더."}
+{"instruction": "피곤해요.", "output": "피곤하네예."}
+{"instruction": "배고파요.", "output": "배고프네예."}
+{"instruction": "졸려요.", "output": "졸리네예."}
+{"instruction": "춥네요.", "output": "춥네예."}
+{"instruction": "덥네요.", "output": "덥네예."}
+{"instruction": "맛있어요.", "output": "맛있네예."}
+{"instruction": "재미있어요.", "output": "재밌네예."}
+{"instruction": "슬퍼요.", "output": "슬프네예."}
+{"instruction": "기뻐요.", "output": "기쁘네예."}
+{"instruction": "화났어요.", "output": "화났네예."}
+{"instruction": "놀랐어요.", "output": "놀랐네예."}
+{"instruction": "미안해요.", "output": "미안하네예."}
+{"instruction": "고마워요.", "output": "고맙네예."}
+{"instruction": "사랑해요.", "output": "사랑하네예."}
