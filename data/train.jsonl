@@ -1,3 +1,1 @@
-{"instruction": "서울의 수도는 어디인가요?", "output": "대한민국의 수도는 서울입니다."}
-{"instruction": "파이썬에서 리스트를 정렬하는 방법을 알려줘", "output": "sorted() 함수를 사용하면 됩니다."}
-{"instruction": "GPT란 무엇인가요?", "output": "GPT는 OpenAI가 개발한 대규모 언어 모델입니다."}
+{"instruction": "이것은 질문입니다", "output": "이것은 답변입니다"}
