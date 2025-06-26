@@ -72,10 +72,10 @@ def main():
             prompts,
             max_length=args.max_seq_length,
             truncation=True,
-            padding=False, # DataCollator에서 패딩하므로 False로 설정
-            return_tensors=None,
+            padding="max_length", # 모든 시퀀스를 max_seq_length에 맞춰 패딩
+            return_tensors="pt", # PyTorch 텐서로 반환
         )
-        tokens["labels"] = [input_ids.copy() for input_ids in tokens["input_ids"]]
+        tokens["labels"] = tokens["input_ids"].clone()
         return tokens
 
     tokenized_dataset = dataset.map(
