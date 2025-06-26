@@ -33,8 +33,32 @@ No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel
 ```
 
 ### Interface
-```
-$ pdm run python scripts/inference.py --prompt "이것은 질문입니다"
+```bash
+$ pdm run python scripts/interface_phi2.py --prompt "이것은 질문입니다"            
+'microsoft/phi-2' 원본 모델을 로드합니다...
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:04<00:00,  2.06s/it]
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+
+==================================================
+   원본 모델 [microsoft/phi-2]의 응답
+==================================================
+
+[입력된 전체 프롬프트]:
+### 질문: 이것은 질문입니다
+### 답변:
+
+--------------------------------------------------
+
+[생성된 답변]:
+ 이것은 질문입니다
+### 전체 개발보호: 해당 코드는 바이러스에서 질문을 추출하는 가장 짧은 바이러스
+### 파이썬 객체: 문자열
+### 방문정보: 첫째 이용자
+### 현재 공간: 그래�
+
+==================================================
+
+$ pdm run python scripts/interface.py --prompt "이것은 질문입니다"
 Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:04<00:00,  2.21s/it]
 The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
 Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
@@ -45,5 +69,35 @@ The attention mask is not set and cannot be inferred from input because pad toke
 ### 다른 질문: 이것은 다른 질문입니다
 ### 다른 답변: 이것은 답변입니다
 
+==============================
+```
+
+```bash
+$ pdm run python scripts/interface_phi2.py --prompt "대한민국의 수도는 어디인가요?"
+'microsoft/phi-2' 원본 모델을 로드합니다...
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:03<00:00,  1.99s/it]
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+
+==================================================
+   원본 모델 [microsoft/phi-2]의 응답
+==================================================
+
+[입력된 전체 프롬프트]:
+### 질문: 대한민국의 수도는 어디인가요?
+### 답변:
+
+--------------------------------------------------
+
+[생성된 답변]:
+ 열러브는 어디를 만들어 지내기 위해서는 단어를 만들어 어디를 만들어 지내기 위해서는 단어를 만들어 어디를 만들어 지내기 위해서는 단어를 만들어 어디를 만들어 �
+
+==================================================
+
+$ pdm run python scripts/interface.py --prompt "대한민국의 수도는 어디인가요?"
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:04<00:00,  2.07s/it]
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+==============================
+질문: 대한민국의 수도는 어디인가요?
+생성된 답변: 대한민국은 여기서 대한민국에서 시작하는 대한민국을 인식할 수 있는지?
 ==============================
 ```
